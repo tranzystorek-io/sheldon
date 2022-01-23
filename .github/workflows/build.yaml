@@ -43,6 +43,9 @@ jobs:
         - { os: macos-latest, target: x86_64-apple-darwin, toolchain: stable }
         - { os: macos-latest, target: x86_64-apple-darwin, toolchain: beta }
         - { os: macos-latest, target: x86_64-apple-darwin, toolchain: nightly }
+        - { os: macos-latest, target: aarch64-apple-darwin, toolchain: stable }
+        - { os: macos-latest, target: aarch64-apple-darwin, toolchain: beta }
+        - { os: macos-latest, target: aarch64-apple-darwin, toolchain: nightly }
         - { os: ubuntu-latest, target: x86_64-unknown-linux-musl, toolchain: stable }
         - { os: ubuntu-latest, target: x86_64-unknown-linux-musl, toolchain: beta }
         - { os: ubuntu-latest, target: x86_64-unknown-linux-musl, toolchain: nightly }
