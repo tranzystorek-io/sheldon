@@ -254,12 +254,11 @@ impl LockedExternalPlugin {
 
 #[cfg(test)]
 mod tests {
-
-    use url::Url;
-
     use super::*;
 
     use std::io::prelude::*;
+
+    use url::Url;
 
     use crate::config::{ExternalPlugin, Source};
     use crate::context::{LockMode, Settings};
@@ -269,7 +268,7 @@ mod tests {
         pub fn testing(root: &Path) -> Self {
             Self {
                 settings: Settings {
-                    version: crate::build::CRATE_RELEASE.to_string(),
+                    version: crate::util::build::CRATE_RELEASE.to_string(),
                     home: "/".into(),
                     config_file: root.join("config.toml"),
                     lock_file: root.join("config.lock"),

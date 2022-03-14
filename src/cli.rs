@@ -13,12 +13,12 @@ use clap_complete as complete;
 use thiserror::Error;
 use url::Url;
 
-use crate::build;
 use crate::config::{
     EditPlugin, GistRepository, GitHubRepository, GitProtocol, GitReference, RawPlugin, Shell,
 };
 use crate::context::{LockMode, Settings};
 use crate::log::{Output, Verbosity};
+use crate::util::build;
 
 /// Whether messages should use color output.
 #[derive(Clone, Copy, Debug, PartialEq)]
